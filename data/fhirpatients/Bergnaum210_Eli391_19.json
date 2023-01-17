@@ -1,0 +1,845 @@
+{
+  "Status": "OK",
+  "FhirResource": {
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:1e1647fd-657b-b06b-7b46-b92a27afd912",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "1e1647fd-657b-b06b-7b46-b92a27afd912",
+        "identifier": {
+          "use": "official",
+          "value": "2.16.840.1.113883.19.5"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "code": "34133-9",
+              "display": "Summarization of episode note",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "date": "2017-05-25T02:31:05-07:00",
+        "title": "Cypress C32 Patient Test Record: Eli391 Bergnaum210",
+        "confidentiality": "N",
+        "section": [
+          {
+            "title": "Allergies",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergies</div>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "48765-2",
+                  "display": "Allergy List",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "title": "Medications",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medications</div>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "10160-0",
+                  "display": "History of medication use",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "title": "Diagnostic Results",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diagnostic Results</div>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "30954-2",
+                  "display": "Results",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "title": "Problems",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Problems</div>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "11450-4",
+                  "display": "Problem list",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "title": "Procedures",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Procedures</div>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "47519-4",
+                  "display": "Procedures",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "title": "Encounters",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Encounters</div>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "46240-8",
+                  "display": "History of encounters",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "title": "Plan of Care",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Plan of Care</div>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "18776-5",
+                  "display": "Treatment plan",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3"
+        },
+        "custodian": {
+          "reference": "Organization/d85c971f-489d-674c-b8d1-93768ee4afef"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Composition/1e1647fd-657b-b06b-7b46-b92a27afd912"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d85c971f-489d-674c-b8d1-93768ee4afef",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "d85c971f-489d-674c-b8d1-93768ee4afef",
+        "name": "Cypress",
+        "address": [
+          {
+            "line": [
+              "202 Burlington Rd."
+            ],
+            "city": "Bedford",
+            "state": "MA",
+            "postalCode": "01730"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1-781-271-3000"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/d85c971f-489d-674c-b8d1-93768ee4afef"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:",
+      "resource": {
+        "resourceType": "Practitioner",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+          ]
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1-781-271-3000"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Practitioner/"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/Cypress",
+            "value": "592641e93425de38f601d1b0"
+          }
+        ],
+        "name": [
+          {
+            "family": "Bergnaum210",
+            "given": [
+              "Eli391"
+            ]
+          }
+        ],
+        "birthDate": "1959-11-25",
+        "gender": "male",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "code": "2106-3",
+                  "display": "White"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "White"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+            "extension": [
+              {
+                "url": "detailed",
+                "valueCoding": {
+                  "code": "2113-9",
+                  "display": "Irish"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "Irish"
+              }
+            ]
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "202 Burlington Rd."
+            ],
+            "city": "Bedford",
+            "state": "MA",
+            "postalCode": "01730"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1-781-271-3000"
+          }
+        ],
+        "communication": [
+          {
+            "language": {
+              "coding": [
+                {
+                  "system": "urn:ietf:bcp:47",
+                  "code": "en-us",
+                  "display": "English (United States)"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c6a69beb-c568-df5c-5cae-27895cf2d81f",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "c6a69beb-c568-df5c-5cae-27895cf2d81f",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:203c8eb1-2320-0135-154c-65652b8bcb9f"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "91935009",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "onsetDateTime": "1960-12-18T02:11:47-08:00",
+        "subject": {
+          "reference": "Patient/a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/c6a69beb-c568-df5c-5cae-27895cf2d81f"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7a67576d-92f7-0402-0312-4091759f8d91",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "7a67576d-92f7-0402-0312-4091759f8d91",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:203cb5c0-2320-0135-154d-65652b8bcb9f"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "91934008",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "onsetDateTime": "1960-12-18T02:11:47-08:00",
+        "subject": {
+          "reference": "Patient/a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/7a67576d-92f7-0402-0312-4091759f8d91"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8a96bf46-ba68-05e0-cbae-18843602d664",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "8a96bf46-ba68-05e0-cbae-18843602d664",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:203cb5c0-2320-0135-154e-65652b8bcb9f"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "417532002",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "onsetDateTime": "1960-12-18T02:11:47-08:00",
+        "subject": {
+          "reference": "Patient/a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/8a96bf46-ba68-05e0-cbae-18843602d664"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:678b49f6-8a57-bcdd-97f7-cfb7d222e73c",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "678b49f6-8a57-bcdd-97f7-cfb7d222e73c",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:203cdcc1-2320-0135-154e-65652b8bcb9f"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "300913006",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "onsetDateTime": "1960-12-18T02:11:47-08:00",
+        "subject": {
+          "reference": "Patient/a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/678b49f6-8a57-bcdd-97f7-cfb7d222e73c"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b30b054c-00a8-fa65-90db-ce09464377a2",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "b30b054c-00a8-fa65-90db-ce09464377a2",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:203d03e0-2320-0135-154f-65652b8bcb9f"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "420174000",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "onsetDateTime": "1960-12-18T02:11:47-08:00",
+        "subject": {
+          "reference": "Patient/a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/b30b054c-00a8-fa65-90db-ce09464377a2"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3a65431d-d73b-6aa2-848d-237f6ff00c9b",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "3a65431d-d73b-6aa2-848d-237f6ff00c9b",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:203d03e0-2320-0135-1550-65652b8bcb9f"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "419263009",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "onsetDateTime": "1960-12-18T02:11:47-08:00",
+        "subject": {
+          "reference": "Patient/a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/3a65431d-d73b-6aa2-848d-237f6ff00c9b"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3f2a5d4d-848b-ac77-eac0-c48c2303e85f",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "3f2a5d4d-848b-ac77-eac0-c48c2303e85f",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:203d5201-2320-0135-1550-65652b8bcb9f"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "418689008",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "onsetDateTime": "1960-12-18T02:11:47-08:00",
+        "subject": {
+          "reference": "Patient/a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/3f2a5d4d-848b-ac77-eac0-c48c2303e85f"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1507e729-8409-3518-abfd-b79744150501",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "1507e729-8409-3518-abfd-b79744150501",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:203d5201-2320-0135-1551-65652b8bcb9f"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "232347008",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "onsetDateTime": "1960-12-18T02:11:47-08:00",
+        "subject": {
+          "reference": "Patient/a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/1507e729-8409-3518-abfd-b79744150501"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d1311af4-8faa-eac9-4772-d12d9b06d8d1",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d1311af4-8faa-eac9-4772-d12d9b06d8d1",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:203d7911-2320-0135-1551-65652b8bcb9f"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "232350006",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "onsetDateTime": "1960-12-18T02:11:47-08:00",
+        "subject": {
+          "reference": "Patient/a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/d1311af4-8faa-eac9-4772-d12d9b06d8d1"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:11d719ad-e937-49f8-a806-000b0cd3f6b1",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "11d719ad-e937-49f8-a806-000b0cd3f6b1",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:203d7911-2320-0135-1552-65652b8bcb9f"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "419474003",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "onsetDateTime": "1960-12-18T02:11:47-08:00",
+        "subject": {
+          "reference": "Patient/a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/11d719ad-e937-49f8-a806-000b0cd3f6b1"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6258adb0-9229-5bcd-fbe6-ac0ea74bdb11",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "6258adb0-9229-5bcd-fbe6-ac0ea74bdb11",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:203da021-2320-0135-1552-65652b8bcb9f"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "424213003",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "onsetDateTime": "1960-12-18T02:11:47-08:00",
+        "subject": {
+          "reference": "Patient/a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/6258adb0-9229-5bcd-fbe6-ac0ea74bdb11"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fc2bff25-00d8-733b-ba06-be0ba1c80401",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "fc2bff25-00d8-733b-ba06-be0ba1c80401",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:203da021-2320-0135-1553-65652b8bcb9f"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "446096008",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "onsetDateTime": "1962-03-31T23:52:43-08:00",
+        "subject": {
+          "reference": "Patient/a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/fc2bff25-00d8-733b-ba06-be0ba1c80401"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b000dce3-c813-7c72-9309-e54381af2d5b",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "b000dce3-c813-7c72-9309-e54381af2d5b",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:203dc731-2320-0135-1553-65652b8bcb9f"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "53741008",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "onsetDateTime": "1969-08-06T10:20:29-07:00",
+        "subject": {
+          "reference": "Patient/a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/b000dce3-c813-7c72-9309-e54381af2d5b"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9f1dc9e7-d875-02d0-c1fc-df1dfd4892d4",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "9f1dc9e7-d875-02d0-c1fc-df1dfd4892d4",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:203dc731-2320-0135-1554-65652b8bcb9f"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "22298006",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "onsetDateTime": "1978-12-20T11:35:39-08:00",
+        "subject": {
+          "reference": "Patient/a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/9f1dc9e7-d875-02d0-c1fc-df1dfd4892d4"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:15219b1d-3a8d-a451-6c36-8ac7cff9b0de",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "15219b1d-3a8d-a451-6c36-8ac7cff9b0de",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:203dee40-2320-0135-1555-65652b8bcb9f"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "399211009",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "onsetDateTime": "1978-12-20T11:35:39-08:00",
+        "subject": {
+          "reference": "Patient/a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/15219b1d-3a8d-a451-6c36-8ac7cff9b0de"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f54d319c-8a97-dc25-74e5-f70433630be5",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "f54d319c-8a97-dc25-74e5-f70433630be5",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:203ba450-2320-0135-154c-65652b8bcb9f"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3"
+        },
+        "result": [
+          {
+            "reference": "Observation/c02cde26-0a0d-ba50-0b99-6583b30c2ad1"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DiagnosticReport/f54d319c-8a97-dc25-74e5-f70433630be5"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c02cde26-0a0d-ba50-0b99-6583b30c2ad1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c02cde26-0a0d-ba50-0b99-6583b30c2ad1",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:203ba451-2320-0135-154c-65652b8bcb9f"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "ASSERTION",
+              "system": "urn:oid:2.16.840.1.113883.5.4"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/a4ecf115-1cc2-2dd2-f41a-12c9d97dc9b3"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/c02cde26-0a0d-ba50-0b99-6583b30c2ad1"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2b05a083-f0cb-7ba1-b148-15694f4c35aa",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "2b05a083-f0cb-7ba1-b148-15694f4c35aa",
+        "type": {
+          "coding": [
+            {
+              "code": "34133-9",
+              "display": "Summarization of episode note",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "date": "2023-01-17T05:19:23.12Z",
+        "status": "current",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "text/plain",
+              "data": "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",
+              "hash": "NWMyZTI4NWQ3MWZhZmNkNWRjNDBjOTkwZmExYWJlYWM0ZTU0NjliYQ=="
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DocumentReference/2b05a083-f0cb-7ba1-b148-15694f4c35aa"
+      }
+    }
+  ]
+}
+}

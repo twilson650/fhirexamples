@@ -1,0 +1,376 @@
+{
+  "Status": "OK",
+  "FhirResource": {
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:4ca1b2ca-1aaa-6a5d-6628-1c98c7dfd3c9",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "4ca1b2ca-1aaa-6a5d-6628-1c98c7dfd3c9",
+        "identifier": {
+          "use": "official",
+          "value": "2.16.840.1.113883.19.5"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "code": "34133-9",
+              "display": "Summarization of episode note",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "date": "2017-05-25T00:58:53-07:00",
+        "title": "Cypress C32 Patient Test Record: Cecelia880 Bergstrom813",
+        "confidentiality": "N",
+        "section": [
+          {
+            "title": "Allergies",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergies</div>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "48765-2",
+                  "display": "Allergy List",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "title": "Medications",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medications</div>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "10160-0",
+                  "display": "History of medication use",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "title": "Diagnostic Results",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diagnostic Results</div>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "30954-2",
+                  "display": "Results",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "title": "Problems",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Problems</div>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "11450-4",
+                  "display": "Problem List",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "title": "Procedures",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Procedures</div>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "47519-4",
+                  "display": "Procedures",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/ceed1ecc-ef47-fcfe-8049-01235885b489"
+        },
+        "custodian": {
+          "reference": "Organization/d85c971f-489d-674c-b8d1-93768ee4afef"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Composition/4ca1b2ca-1aaa-6a5d-6628-1c98c7dfd3c9"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d85c971f-489d-674c-b8d1-93768ee4afef",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "d85c971f-489d-674c-b8d1-93768ee4afef",
+        "name": "Cypress",
+        "address": [
+          {
+            "line": [
+              "202 Burlington Rd."
+            ],
+            "city": "Bedford",
+            "state": "MA",
+            "postalCode": "01730"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1-781-271-3000"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/d85c971f-489d-674c-b8d1-93768ee4afef"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:",
+      "resource": {
+        "resourceType": "Practitioner",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+          ]
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1-781-271-3000"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Practitioner/"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ceed1ecc-ef47-fcfe-8049-01235885b489",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "ceed1ecc-ef47-fcfe-8049-01235885b489",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/Cypress",
+            "value": "59262c4d3425debbe9016fb3"
+          }
+        ],
+        "name": [
+          {
+            "family": "Bergstrom813",
+            "given": [
+              "Cecelia880"
+            ]
+          }
+        ],
+        "birthDate": "1928-03-27",
+        "gender": "female",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "code": "2106-3",
+                  "display": "White"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "White"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+            "extension": [
+              {
+                "url": "detailed",
+                "valueCoding": {
+                  "code": "2131-1",
+                  "display": "American"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "American"
+              }
+            ]
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "202 Burlington Rd."
+            ],
+            "city": "Bedford",
+            "state": "MA",
+            "postalCode": "01730"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1-781-271-3000"
+          }
+        ],
+        "communication": [
+          {
+            "language": {
+              "coding": [
+                {
+                  "system": "urn:ietf:bcp:47",
+                  "code": "en-us",
+                  "display": "English (United States)"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/ceed1ecc-ef47-fcfe-8049-01235885b489"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8b99dd6f-0104-d095-369c-506d94e878c6",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "8b99dd6f-0104-d095-369c-506d94e878c6",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:3efe9fd0-2313-0135-06de-65652b8bcb9f"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/ceed1ecc-ef47-fcfe-8049-01235885b489"
+        },
+        "result": [
+          {
+            "reference": "Observation/104cc32e-6636-4638-267b-36a2db74b1b9"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DiagnosticReport/8b99dd6f-0104-d095-369c-506d94e878c6"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:104cc32e-6636-4638-267b-36a2db74b1b9",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "104cc32e-6636-4638-267b-36a2db74b1b9",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:3efe9fd1-2313-0135-06de-65652b8bcb9f"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "ASSERTION",
+              "system": "urn:oid:2.16.840.1.113883.5.4"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/ceed1ecc-ef47-fcfe-8049-01235885b489"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/104cc32e-6636-4638-267b-36a2db74b1b9"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d4424b39-8518-8d9d-7e43-37d8f68d49de",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "d4424b39-8518-8d9d-7e43-37d8f68d49de",
+        "type": {
+          "coding": [
+            {
+              "code": "34133-9",
+              "display": "Summarization of episode note",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "date": "2023-01-17T05:19:30.028Z",
+        "status": "current",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "text/plain",
+              "data": "H4sIAAAAAAAACu1aWXPbNhB+zr9A+ZKHDsVL1DW0MrLkJG59jaSk7VMGIiCJLQlqQNBHf30XPESQkmU5dpp2Wk0yIwCLxWJ3v28XGnvv7qMQ3VKeBDE70ayWqSHK/JgEbHWifZq/13vau6E3DgMW+DicxH4aUSYQ7GLJiZZyNliHXT3mq8Gto+XTg4QIv74mZ8rV+yQ40dZCbAaGcXd317pzWiBi2KZpGb9eXsz8NY2wHrBEYOZT2JUEgySbvIh9LDI76+eiQts9pyu7xYJEtFbx7aBn9kxjHYhk8xmHAcm2GrkmwyeY275jGwFbcpwInvoi5VTOG2PH/jKejFr3CdGGCHmc4jAax4Qi8AsFr8w0Q86Lhw09J4jHsTjR7JbVafXaZstqWZbT6znwBRxC7wVluW9vrseTLx8nJnzaZqGBRpsQi4NazJYN/2ChZWlo7663B3fZb+Um5AUHzui33Jqpbt/u2H6bOG3bJXSxoH3T6iwXcB+cJMGKQXKMUrGOeSAernAEPhk/bDhNEnTD49+pL/Lr+ZXPnLblOHpfQyRIwPhi1yyNIsyDP7PQoHiJ6CZI5CYWC4i83Dp7SOC++6zuSIdUIrnGi+vzq3Hh3ECEdFgaBkFFN3COTN45TQSaUj/mZIDG1KdhgHs9E51SvoJUiKOe5XhGvh8U0eUSrhTc0nkQUXSLwxQOsk2ra7q2a5puz3XK+7JlQOCEAPJNPCgpc5ULhJitUryiygpleplPPLNojvmKChky5G1yg6dxZgiqhbG42HFxM8rtmBCO0gQO/ngjk7uYhltTKkawCCovAkaHtmmj05QD7lcCYjMlLc/Yldoq8OG+w1NKlnADz8hGinJI1uHlSCqQ37YLmxgmQumMIXjTMT1DmSlkDGlxORA0BB9FZQxgOPjR0rs9S7e7lu4AsqqbFr6rTmOQINsRjFcQUTaswu8Z+YwissRREMp7qXlRTG6FjJpi8HAEXAnicP4t/UAZoVyJ9/un0trdl9YfL7potEfx9rpw8CLgYq2mqNW3e6YDnum7XbetiMpcw76ahbZldnSngc5fgDtrKCygPhmjKWxHmBF0JtZQGCDcT6PVdnp1G2i29wOP003NFMfSrYYpo4hyqD/sG1pTYTOKUlnsJCcpAk/Bt8qHQ5ogxZW83I4KhHtGgwM8nNFsLiwO04+UztiZkpycK8qowd/4GjSVmm+gU1DckoMKjosRJCSF1KSkBgjA7+7OanJrKExtv/ppIqABwYVwKTuuTWd8KRkQvKesXfMVZkVBqaysPFCaXLBnE7zPcEnhTTXyL2XRwzx6gEmP49ImmxpHObAKlhoAsE0dgc82Mdum9bafIqcxUahSFfN+0HU0CkPg1oAmA1QgAa1xAuUf4XIF6bqUTmQJLk16Tt9ktzolPJR+pN3rdlzdfkGP0SCozNwHdAEEXR6XNxDbK1Ydxe4HbnQvhvM15UBk8B8c4KecS39UjsACiTVFGQ1AryTWQYJI0ZC/TZAPfap0EaRYpi3TC0v8AclOVSbCiTaZnn8u676HfYH8EMKbr43Gcw1FcUzy4dnnK6VDeI7L2y2nhpNtz+LQJXWtBaDJsRzdtBxXNzuE6B2349qL3sJf9JfqxixgLA3D9yG+jTn0USN1WYIgzYwvogoXgtKoitR6txrdx3cHNBv1fW/kp9IpfTqlYebtZB1sFP/OPp3+pKGAFS+qc0ZOtCUOE1q5EjTEi4Ty27zrVQJwfTprBgAxusrkMk0Aq5qiZ8elWytVe0Jj1kNDHwtNE0+j2exsOj+/vnq6val3IvvCKGkipMBKTcnHork3op+ufm7uNw4pUOQy+s8enjKyssnQSt6w+la/b5pdrb7lKRrpdx4hDKics3RRvHXrfYSSJWpmNrOvqrR+2VVkMhlLl7QJfF2j6P10fElJ0a7sEnJUrTUo+c2bZxJy8ZCtZ5AFTxVTN1+NkT8CE8fAfcCUleny6VOnZ+XKKkEfIGTVEV9NyWXQkjL2ancPdjZYQCGJ2elocnmQF3Lbr2L0B4vvmGqvakfhf5akEV7UypIXYZYucV7A4UFPoJbXcaQKXOAFNE1kwtNVE5FqvbXMftvOcFOLEoFtKOaKkQ1gHQ+vg9uK3xuuri/PJgjqXJMYnr5RXabpFomvhisBfPuD+0KQTgK8YtDbBT78hpGkodjFKs/nX946wWBP8+SYfbf9is1TcY06MHeveSQ+y8u/ersU560x5SocT0fz+dn0t9dqnEp37xbn/pIcW5yf3TftK7jHt071QvtYkW28Eb53J2Qf7ITA2dZ/sxN6rO3YF71CvoTFC3ltHDMS7O89/O3SyynN3UNoltV2Tb39aoQG1QHqQLTnNVisHMtlm0IROMCnnCGoPv+ud+CjdOZ3aIPOlv8/A/8u8tshnsOhgeG3J79/BPuh7/v+AnbwKYH+cpcCN9ull1Ng+StArUHvulb/dSmwsHeHAIv54ymwvPirE99Wt0p/N9Pr8XPw99wOT038HeBZRwPvVWDnHYm5A4h7Em9PoQ1+qS7DcDR8sl/R6z8xqyKe0fyDheFfZhN1AOkgAAA=",
+              "hash": "ZGFiZTY1NDEwOGUwYjJjNDY1ODU4ZjhjZWE2MDA0MTY0ZjI0NzJmZg=="
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DocumentReference/d4424b39-8518-8d9d-7e43-37d8f68d49de"
+      }
+    }
+  ]
+}
+}
