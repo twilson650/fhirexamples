@@ -5,7 +5,7 @@ import requests
 #fhir server endpoint
 FHIR_URL = "http://localhost:8080/fhir/"
 
-PATIENT_DATA_DIR = os.getcwd() + "/fhirpatients"
+PATIENT_DATA_DIR = os.getcwd() + "/data/fhirpatients"
 
 #fhir server json header content
 headers = {"Content-Type": "application/fhir+json;charset=utf-8"}
